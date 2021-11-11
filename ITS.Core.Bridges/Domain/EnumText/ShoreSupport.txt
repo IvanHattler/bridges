@@ -1,0 +1,28 @@
+﻿Тип береговой опоры
+ShoreSupportType
+Массивный обсыпной устой
+MassiveCrumblingAbutment
+Массивный устой с обратными стенками
+MassiveAbutmentBackWalls
+Устой однорядный свайного типа
+SingleRowPileAbutment
+Устой однорядный стоечного типа
+SingleRowRackAbutment
+Устой двухрядный (или козловой) свайного типа
+DoubleRowPileAbutment
+Устой двухрядный (или козловой) стоечного типа
+DoubleRowRackAbutment
+Устой лежневого типа
+StubAbutment
+Ряжевый устой
+RageAbutment
+Устой-угловая контрфорсная подпорная стенка
+AngleButtressRetainingWallAbutment
+Устой столбчатый с ригелем
+ColumnarCrossbarAbutment
+Устой арочного распорного моста
+ArchedSpacerBridgeAbutment
+Анкерный устой висячего моста
+SuspensionBridgeAnchor
+Нет данных
+NoData

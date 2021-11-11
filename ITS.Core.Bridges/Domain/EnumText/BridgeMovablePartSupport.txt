@@ -1,0 +1,26 @@
+﻿Тип подвижных опорных частей
+BridgeMovablePartSupport
+Отсутствуют
+None
+Прокладки из рубероида
+RoofingMaterialGaskets
+Плоские металлические
+FlatMetal
+Тангенциальные металлические
+TangentialMetal
+Резино-металлические (РОЧ)
+RubberMetal
+Резино-фторопластовые, тефлоновые и др. полимерные
+RubberFluoroplastic
+Катковые (один каток)
+OneRoller
+Валковые (железобетонные)
+RollerReinforcedConcrete
+Многокатковые
+MultiRoller
+Секторные
+Sectoral
+Балансирные
+Balancing
+Нет данных
+NoData

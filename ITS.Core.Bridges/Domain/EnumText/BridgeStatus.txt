@@ -1,0 +1,12 @@
+﻿Статус моста
+BridgeStatus
+[ У ] становлен
+Set
+[ Т ] ребуется
+Required
+[ Д ] емонтировать
+Dismantle
+[ Р ] емонт
+Repairs
+[ В ] ременный
+Temporary

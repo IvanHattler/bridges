@@ -1,0 +1,20 @@
+﻿Тип неподвижных опорных частей
+BridgeMotionlessPartSupport
+Отсутствуют
+None
+Прокладки из рубероида
+RoofingMaterialGaskets
+Плоские (под балкой одна стальная пластина)
+Flat
+Тангенциальные металлические
+TangentialMetal
+Резино - фторопластовые (резина в обойме)
+RubberFluoroplastic
+Балансирные
+Balancing
+Комбинированные
+Combined
+Шаровые сегментные
+BallSegment
+Нет данных
+NoData

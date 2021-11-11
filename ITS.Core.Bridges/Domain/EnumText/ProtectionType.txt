@@ -1,0 +1,14 @@
+﻿Тип ограждения
+ProtectionType
+Парапетное
+Parapet
+Барьерное
+Barrier
+Бордюрное
+Border
+Тросовое
+Cable
+Комбинированное
+Combined
+Нет данных
+NoData

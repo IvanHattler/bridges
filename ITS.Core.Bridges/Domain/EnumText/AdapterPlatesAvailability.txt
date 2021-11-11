@@ -1,0 +1,8 @@
+﻿Наличие переходных плит
+AdapterPlatesAvailability
+Нет (0)
+No
+Есть (1)
+Yes
+Нет данных
+NoData

@@ -1,0 +1,24 @@
+﻿Типы деформационных швов 
+ExpansionJointType
+Закрытого типа с металлическим компенсатором
+ClosedMetalCompensator
+Закрытого типа Торма Джоинт
+ClosedTormaJoint
+Заполненного типа с мастичным заполнением и металлическим компенсатором
+FilledMasticAndMetalCompensator
+Заполненного типа с мастичным заполнением и стальным окаймлением
+FilledMasticStellEdging
+Заполненного типа с резиновым или полимерным компенсатором
+FilledRubberOrPolymerCompensator
+Заполненного типа с двумя (тремя) резиновыми компенсаторами - модульный
+FilledTwoRubberCompensatorModular
+Перекрытого типа со стальным скользящим листом
+OverlappedSteelSliding
+Перекрытого типа со стальным скользящим листом двусторонний уравновешенного типа
+OverlappedSteelSlidingDoubleSidedBalanced
+Перекрытого типа с гребенчатой плитой
+OverlappedCombType
+Перекрытого типа откатного типа
+OverlappedSlidingType
+Нет данных
+NoData

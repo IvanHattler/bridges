@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82B0FECA-7AD8-4815-A0AF-1C0EEB18A6E6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ReportTests</RootNamespace>
+    <AssemblyName>ReportTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ITS.Common.RtfWriter">
+      <HintPath>..\ITS.MapObjects.BridgesMapObject\bin\Debug\ITS.Common.RtfWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Core">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITS.Core.Bridges\ITS.Core.Bridges.csproj">
+      <Project>{67357310-f809-4bfa-8129-e84f0427195a}</Project>
+      <Name>ITS.Core.Bridges</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITS.MapObjects.BridgesMapObject\ITS.MapObjects.BridgesMapObject.csproj">
+      <Project>{68729b07-a6a2-4008-9908-4f54702f7005}</Project>
+      <Name>ITS.MapObjects.BridgesMapObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITSLogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CattleDrive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bridge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testLargeImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

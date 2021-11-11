@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68729B07-A6A2-4008-9908-4F54702F7005}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITS.MapObjects.BridgesMapObject</RootNamespace>
+    <AssemblyName>ITS.MapObjects.BridgesMapObject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ITS.MapObjects.BridgesMapObject.xml</DocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <DocumentationFile>bin\Release\ITS.MapObjects.BridgesMapObject.xml</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">..\.slowCheetah\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoUtility, Version=3.1.6.0, Culture=neutral, PublicKeyToken=8055d2e1a20cc207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\GeoUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Client.Core, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Client.Interface.Guifreaks.Common, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Client.Interface.Guifreaks.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Client.Interface.Guifreaks.NavigationBar, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Client.Interface.Guifreaks.NavigationBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Client.Interface.StateMachine, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Client.Interface.StateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Client.Interface.VisualInterface, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Client.Interface.VisualInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Common.RtfWriter, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Common.RtfWriter.5.0.306.195\lib\ITS.Common.RtfWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Core, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.GIS.CoreToGeoTranslators, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.GIS.5.3.8078.3\lib\ITS.GIS.CoreToGeoTranslators.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.GIS.GeoAPI, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.GIS.5.3.8078.3\lib\ITS.GIS.GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.GIS.MapEntities, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.GIS.5.3.8078.3\lib\ITS.GIS.MapEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.GIS.UIControls, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.GIS.5.3.8078.3\lib\ITS.GIS.UIControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Managers.BaseManagers, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.Managers.BaseManagers.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.MapObjects.BaseMapObject, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.MapObjects.BaseMapObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.MapObjects.BaseMapObject.Misc, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\ITS.MapObjects.BaseMapObject.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.MapObjects.EditBaseDictionariesPlugin, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.EditGeometry.5.3.8078.3\lib\ITS.MapObjects.EditBaseDictionariesPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.MapObjects.EditGeometryPlugin, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.EditGeometry.5.3.8078.3\lib\ITS.MapObjects.EditGeometryPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.ProjectBase.Data, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.ProjectBase.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.ProjectBase.Utils, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.ProjectBase.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.GeoTools, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.GeoTools.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.MsSqlSpatial, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.MsSqlSpatial.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.PostGis, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.PostGis.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Spatial, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="Sanford.StateMachineToolkit, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Plugin.Core.5.3.8078.3\lib\Sanford.StateMachineToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Serialize.Linq, Version=1.1.4878.20799, Culture=neutral, PublicKeyToken=25bcc11ba213b377, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Serialize.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Version.cs">
+      <Link>Version.cs</Link>
+    </Compile>
+    <Compile Include="BridgeRenderGeometry.cs" />
+    <Compile Include="Controls\AddableTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddableTreeView.Designer.cs">
+      <DependentUpon>AddableTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddableListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddableListBox.Designer.cs">
+      <DependentUpon>AddableListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventArgses\BridgeEventArgs.cs" />
+    <Compile Include="Helpers\BridgeAttributeHelper.cs" />
+    <Compile Include="Helpers\BridgeCreator.cs" />
+    <Compile Include="Helpers\BridgePanelHelper.cs" />
+    <Compile Include="Helpers\BridgeReportMaker.cs" />
+    <Compile Include="Helpers\BridgesResults.cs" />
+    <Compile Include="Helpers\BridgeSupportTreeCreator.cs" />
+    <Compile Include="Helpers\BridgeTypeDependencies.cs" />
+    <Compile Include="Helpers\ComparerInGroups.cs" />
+    <Compile Include="Helpers\DocumentationInfoTreeCreator.cs" />
+    <Compile Include="Helpers\EditViewHelper.cs" />
+    <Compile Include="Helpers\IBridgeReportMaker.cs" />
+    <Compile Include="Helpers\IComparerInGroups.cs" />
+    <Compile Include="Helpers\ReferenceComparer.cs" />
+    <Compile Include="Helpers\SpanStructureTreeCreator.cs" />
+    <Compile Include="Helpers\TreeCreator.cs" />
+    <Compile Include="IPresenters\IBasePresenter.cs" />
+    <Compile Include="IPresenters\IBridgeSummaryPresenter.cs" />
+    <Compile Include="IViews\IBaseView.cs" />
+    <Compile Include="IViews\IBridgeInfoView.cs" />
+    <Compile Include="IViews\IBridgeEditView.cs" />
+    <Compile Include="IViews\ITypicalProjectAddView.cs" />
+    <Compile Include="IViews\IDocumentationView.cs" />
+    <Compile Include="IViews\IInfoOfRepairsEditView.cs" />
+    <Compile Include="IViews\IDefectEditView.cs" />
+    <Compile Include="IViews\ISpanStructureEditView.cs" />
+    <Compile Include="IViews\IBridgeSupportEditView.cs" />
+    <Compile Include="IViews\IBridgeObstacleEditView.cs" />
+    <Compile Include="IViews\IBridgeSummaryView.cs" />
+    <Compile Include="Passport\BridgesPassportizator.cs" />
+    <Compile Include="Presenters\BasePresenter.cs" />
+    <Compile Include="Presenters\BridgeSummaryPresenter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportHelper.cs" />
+    <Compile Include="Reports\BridgeReport.cs" />
+    <Compile Include="BridgeConfigResolver.cs" />
+    <Compile Include="BridgeConstants.cs" />
+    <Compile Include="BridgeLayerLoader.cs" />
+    <Compile Include="BridgeLayerRenderer.cs" />
+    <Compile Include="BridgePanel.cs" />
+    <Compile Include="BridgePanelResourceHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeEditView.Designer.cs">
+      <DependentUpon>BridgeEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BridgeInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeInfoView.Designer.cs">
+      <DependentUpon>BridgeInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TypicalProjectAddView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TypicalProjectAddView.Designer.cs">
+      <DependentUpon>TypicalProjectAddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DocumentationInfoEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DocumentationInfoEditView.Designer.cs">
+      <DependentUpon>DocumentationInfoEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoOfRepairsEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoOfRepairsEditView.Designer.cs">
+      <DependentUpon>InfoOfRepairsEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DefectEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DefectEditView.Designer.cs">
+      <DependentUpon>DefectEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpanStructureEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SpanStructureEditView.Designer.cs">
+      <DependentUpon>SpanStructureEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BridgeSupportEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeSupportEditView.Designer.cs">
+      <DependentUpon>BridgeSupportEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BridgeObstacleEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeObstacleEditView.Designer.cs">
+      <DependentUpon>BridgeObstacleEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BridgeSummaryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BridgeSummaryView.Designer.cs">
+      <DependentUpon>BridgeSummaryView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AddableTreeView.resx">
+      <DependentUpon>AddableTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddableListBox.resx">
+      <DependentUpon>AddableListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BaseView.resx">
+      <DependentUpon>BaseView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BridgeEditView.resx">
+      <DependentUpon>BridgeEditView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BridgeInfoView.resx">
+      <DependentUpon>BridgeInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TypicalProjectAddView.resx">
+      <DependentUpon>TypicalProjectAddView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DocumentationInfoEditView.resx">
+      <DependentUpon>DocumentationInfoEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoOfRepairsEditView.resx">
+      <DependentUpon>InfoOfRepairsEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DefectEditView.resx">
+      <DependentUpon>DefectEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SpanStructureEditView.resx">
+      <DependentUpon>SpanStructureEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BridgeSupportEditView.resx">
+      <DependentUpon>BridgeSupportEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BridgeObstacleEditView.resx">
+      <DependentUpon>BridgeObstacleEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BridgeSummaryView.resx">
+      <DependentUpon>BridgeSummaryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITSGIS.exe.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Include="ITSGIS.exe.Debug.config">
+      <DependentUpon>ITSGIS.exe.config</DependentUpon>
+      <IsTransformFile>true</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITSGIS.exe.Release.config">
+      <DependentUpon>ITSGIS.exe.config</DependentUpon>
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ITS.Core.Spectrum.Domain.Enums.SomeTypeHelper.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\itsgisWND_BG-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsgisWND_BottomButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchOrganizationImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditAdvertisementImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IModels\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditGeometryBridgeImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditBridgeImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchBridgeImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomeObjectInfoImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotateGeometryImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EJT_OverlappedSteelSlidingDoubleSidedBalanced.jpg" />
+    <None Include="Resources\EJT_ClosedMetalCompensator.jpg" />
+    <None Include="Resources\EJT_ClosedTormaJoint.jpg" />
+    <None Include="Resources\EJT_FilledMasticAndMetalCompensator.jpg" />
+    <None Include="Resources\EJT_FilledMasticStellEdging.jpg" />
+    <None Include="Resources\EJT_FilledRubberOrPolymerCompensator.jpg" />
+    <None Include="Resources\EJT_FilledTwoRubberCompensatorModular.jpg" />
+    <None Include="Resources\EJT_OverlappedCombType.jpg" />
+    <None Include="Resources\EJT_OverlappedSlidingType.jpg" />
+    <None Include="Resources\EJT_OverlappedSteelSliding.jpg" />
+    <Content Include="Resources\SplitGeometryBridgesImageSource.png" />
+    <Content Include="Resources\ST_AngleButtressRetainingWallAbutment.jpg" />
+    <Content Include="Resources\ST_ArchedSpacerBridgeAbutment.jpg" />
+    <Content Include="Resources\ST_Columnar.jpg" />
+    <Content Include="Resources\ST_ColumnarCrossbarAbutment.jpg" />
+    <Content Include="Resources\ST_ColumnarCrossbarless.jpg" />
+    <Content Include="Resources\ST_ColumnarWithVShapedBranch.jpg" />
+    <Content Include="Resources\ST_DoubleRowPile.jpg" />
+    <Content Include="Resources\ST_DoubleRowPileAbutment.jpg" />
+    <Content Include="Resources\ST_DoubleRowRack.jpg" />
+    <Content Include="Resources\ST_DoubleRowRackAbutment.jpg" />
+    <Content Include="Resources\ST_Frame.jpg" />
+    <Content Include="Resources\ST_Massive.jpg" />
+    <Content Include="Resources\ST_MassiveAbutmentBackWalls.jpg" />
+    <Content Include="Resources\ST_MassiveColumnar.jpg" />
+    <Content Include="Resources\ST_MassiveCrumblingAbutment.jpg" />
+    <Content Include="Resources\ST_MassiveWithCrossbar.jpg" />
+    <Content Include="Resources\ST_RackWithSwingingStruts.jpg" />
+    <Content Include="Resources\ST_RageAbutment.jpg" />
+    <Content Include="Resources\ST_Ragged.jpg" />
+    <Content Include="Resources\ST_SingleColumnWithCrossbar.jpg" />
+    <Content Include="Resources\ST_SingleRowPile.jpg" />
+    <Content Include="Resources\ST_SingleRowPileAbutment.jpg" />
+    <Content Include="Resources\ST_SingleRowRack.jpg" />
+    <Content Include="Resources\ST_SingleRowRackAbutment.jpg" />
+    <Content Include="Resources\ST_SingleRowRackWithBuiltInCrossbar.jpg" />
+    <Content Include="Resources\ST_StubAbutment.jpg" />
+    <Content Include="Resources\ST_SuspensionBridgeAnchor.jpg" />
+    <Content Include="Resources\ST_SuspensionBridgePylon.jpg" />
+    <Content Include="Resources\ST_WallSupports.jpg" />
+    <Content Include="Resources\SwingAxle.jpg" />
+    <Content Include="Resources\VerticalLiftSwing.jpg" />
+    <None Include="Resources\Tunnel.jpg" />
+    <None Include="Resources\Viaduct.jpg" />
+    <None Include="Resources\AddBridge.png" />
+    <None Include="Resources\ATVCopy.png" />
+    <None Include="Resources\ATVEdit.png" />
+    <None Include="Resources\ATVDown.png" />
+    <None Include="Resources\ATVUp.png" />
+    <None Include="Resources\ATVDelete.png" />
+    <None Include="Resources\ATVAdd.png" />
+    <None Include="Resources\Aqueduct.jpg" />
+    <None Include="Resources\Bridge.jpg" />
+    <None Include="Resources\CattleDrive.jpg" />
+    <None Include="Resources\BridgeSummaryImageSource.png" />
+    <None Include="Resources\AcceptBridgesImageSource.png" />
+    <None Include="Resources\CancelGroupingBridgesImageSource.png" />
+    <None Include="Resources\CancelBridgesImageSource.png" />
+    <None Include="Resources\BackBridgesImageSource.png" />
+    <Content Include="Resources\ArchedBeamExternallySpacerRideTop.jpg" />
+    <Content Include="Resources\ArchedBeamExternallyWithoutExpansion.jpg" />
+    <Content Include="Resources\ArchedDoubleHinged.jpg" />
+    <Content Include="Resources\ArchedFarmRideMiddle.jpg" />
+    <Content Include="Resources\ArchedHingeless.jpg" />
+    <Content Include="Resources\ArchedThreeHinged.jpg" />
+    <Content Include="Resources\ArchedTightening.jpg" />
+    <Content Include="Resources\BeamCantilever.jpg" />
+    <Content Include="Resources\BeamCantileverSuspendedSpan.jpg" />
+    <Content Include="Resources\BeamCut.jpg" />
+    <Content Include="Resources\BeamTemperatureContinuous.jpg" />
+    <Content Include="Resources\CableStayedWithStiffeningBeam.jpg" />
+    <Content Include="Resources\Combined.jpg" />
+    <Content Include="Resources\ContinuousBeamConstantHeight.jpg" />
+    <Content Include="Resources\ContinuousBeamVariableHeight.jpg" />
+    <Content Include="Resources\CopyPastBridgeImageSource.png" />
+    <Content Include="Resources\CrossbarAndStrut.jpg" />
+    <Content Include="Resources\DeleteBridgeImageSource.png" />
+    <Content Include="Resources\DeleteSomeObjectImageSource.png" />
+    <None Include="Resources\EditGeometryPipeImageSource.png" />
+    <None Include="Resources\ITSGIS Icon21.png" />
+    <None Include="Resources\ITSGIS Icon.ico" />
+    <None Include="Resources\ITSBackground1.png" />
+    <None Include="Resources\ITSLogo1.jpg" />
+    <None Include="Resources\ITSGISIcon.jpg" />
+    <None Include="Resources\Drawbridge.jpg" />
+    <None Include="Resources\Estacada.jpg" />
+    <None Include="Resources\FillType.jpg" />
+    <None Include="Resources\FlyingFerry.jpg" />
+    <None Include="Resources\ForwardBridgesImageSource.png" />
+    <Content Include="Resources\DropDownSwing.jpg" />
+    <Content Include="Resources\Frame.jpg" />
+    <Content Include="Resources\FrameConsole.jpg" />
+    <Content Include="Resources\FrameInclinedSupports.jpg" />
+    <Content Include="Resources\FrameSuspended.jpg" />
+    <Content Include="Resources\FrameVShapedSupports.jpg" />
+    <Content Include="Resources\GroupBridgesImageSource.png" />
+    <Content Include="Resources\HangingEmbeddedRopesInAnchorAbutments.jpg" />
+    <Content Include="Resources\HangingWithRopesStiffeningBeam.jpg" />
+    <Content Include="Resources\ObjectInfo.png" />
+    <None Include="Resources\Overpass.jpg" />
+    <None Include="Resources\Pontoon.jpg" />
+    <Content Include="Resources\Podkosnaya.jpg" />
+    <Content Include="Resources\RageAbutment.jpg" />
+    <Content Include="Resources\SelectBridgeDismantleSmallImageSource.png" />
+    <Content Include="Resources\SelectBridgeImageSource.png" />
+    <Content Include="Resources\SelectBridgeRepairsSmallImageSource.png" />
+    <Content Include="Resources\SelectBridgeRequiredSmallImageSource.png" />
+    <Content Include="Resources\SelectBridgeSetSmallImageSource.png" />
+    <Content Include="Resources\SelectBridgeTemporarySmallImageSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITS.Core.Bridges\ITS.Core.Bridges.csproj">
+      <Project>{67357310-f809-4bfa-8129-e84f0427195a}</Project>
+      <Name>ITS.Core.Bridges</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITS.Managers.BridgesManagers\ITS.Managers.BridgesManagers.csproj">
+      <Project>{14ce6481-aa5e-44c2-b9ea-1dde83d21024}</Project>
+      <Name>ITS.Managers.BridgesManagers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y /S "$(TargetPath)" "$(SolutionDir)binDistrib\$(ConfigurationName)\"
+xcopy /Y /S "$(ProjectDir)$(OutDir)ITSGIS.exe.config" "$(SolutionDir)binDistrib\$(ConfigurationName)\"
+exit /B 0</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

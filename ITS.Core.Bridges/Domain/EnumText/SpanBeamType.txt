@@ -1,0 +1,14 @@
+﻿Тип балок
+SpanBeamType
+Плитные с ненапрягаемой арматурой для прямых участков пути
+SlabsTensionFreeStraightTrackSections
+Плитные с ненапрягаемой арматурой для кривых участков пути
+SlabsTensionFreeCurvedTrackSections
+Плитные с ненапрягаемой арматурой для стационарных пролётных строений
+SlabsTensionFreeStationarySpans
+Ребристые с ненапрягаемой арматурой для кривых участков пути
+RibbedTensionFreeCurvedTrackSections
+Станционные с предварительно напрягаемой арматурой для прямых участков пути
+StationaryPrestressedStraightTrackSections
+Станционные с предварительно напрягаемой арматурой для кривых участков пути
+StationaryPrestressedCurvedTrackSections

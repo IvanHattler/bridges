@@ -1,0 +1,16 @@
+﻿Тип фундамента
+FoundationType
+Свайный
+Pile
+Плитный на естественном основании
+SlabNaturalBase
+Низкий свайный ростверк
+LowPileGrillage
+Высокий свайный ростверк
+HighPileGrillage
+Безростверковый из отдельных столбов
+GrillagelessSeparatePillars
+Опускной колодец
+Coffer
+Кессонный
+Caisson

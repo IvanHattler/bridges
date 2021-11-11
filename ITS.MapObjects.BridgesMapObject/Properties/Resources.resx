@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RotateBridgeUserFunctionalName" xml:space="preserve">
+    <value>Поворот моста</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="VerticalLiftSwing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VerticalLiftSwing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AcceptBridgesGroupName" xml:space="preserve">
+    <value>Функционал изменений</value>
+  </data>
+  <data name="DeleteBridgeUserFunctionalName" xml:space="preserve">
+    <value>Удалить мост</value>
+  </data>
+  <data name="SelectBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwingAxle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwingAxle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeSetGroupName" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="SelectBridgeSetShortUserFunctionalName" xml:space="preserve">
+    <value>Установлен</value>
+  </data>
+  <data name="MoveBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditGeometryBridgeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeRepairsImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeRepairsSmallImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyPasteBridgeUserFunctionalName" xml:space="preserve">
+    <value>Копировать мост</value>
+  </data>
+  <data name="SearchBridgeUserFunctionalName" xml:space="preserve">
+    <value>Поиск </value>
+  </data>
+  <data name="BeamCantileverSuspendedSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeamCantileverSuspendedSpan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveBridgeGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="SelectBridgeRequiredShortUserFunctionalName" xml:space="preserve">
+    <value>Требуется</value>
+  </data>
+  <data name="GroupBridgesGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="DirectoryBridgesGroupName" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="SelectBridgeRequiredImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeRequiredSmallImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddBridge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BindBridgeToVillageGroupName" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="BackBridgesGroupName" xml:space="preserve">
+    <value>Функционал изменений</value>
+  </data>
+  <data name="CancelGroupingBridgesUserFunctionalName" xml:space="preserve">
+    <value>Отменить группировку</value>
+  </data>
+  <data name="BindBridgeToVillageImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSGIS Icon21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditGeometryBridgeUserFunctionalName" xml:space="preserve">
+    <value>Редактор геометрии</value>
+  </data>
+  <data name="BridgeInfoGroupName" xml:space="preserve">
+    <value>Ведомости</value>
+  </data>
+  <data name="ContinuousBeamVariableHeight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContinuousBeamVariableHeight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditGeometryBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditGeometryPipeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBridgesUserFunctionalName" xml:space="preserve">
+    <value>Отменить все изменения</value>
+  </data>
+  <data name="FrameInclinedSupports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrameInclinedSupports.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HangingWithRopesStiffeningBeam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HangingWithRopesStiffeningBeam.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeInfoUserFunctionalName" xml:space="preserve">
+    <value>Информация о мосте</value>
+  </data>
+  <data name="CopyPasteBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyPastBridgeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirectoryBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSGIS Icon21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HangingEmbeddedRopesInAnchorAbutments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HangingEmbeddedRopesInAnchorAbutments.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeSummaryUserFunctionalName" xml:space="preserve">
+    <value>Сводная ведомость мостов</value>
+  </data>
+  <data name="PluginToolName" xml:space="preserve">
+    <value>Мостовые сооружения</value>
+  </data>
+  <data name="SplitGeometryBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SplitGeometryBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackBridgesUserFunctionalName" xml:space="preserve">
+    <value>Отменить последнее изменение</value>
+  </data>
+  <data name="ArchedBeamExternallyWithoutExpansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedBeamExternallyWithoutExpansion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeSetUserFunctionalName" xml:space="preserve">
+    <value>Отобразить установленные мосты</value>
+  </data>
+  <data name="SelectBridgeDismantleImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeDismantleSmallImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeUserFunctionalName" xml:space="preserve">
+    <value>Выбрать мост</value>
+  </data>
+  <data name="SelectBridgeRequiredGroupName" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="SelectBridgeTemporaryUserFunctionalName" xml:space="preserve">
+    <value>Отобразить временные мосты</value>
+  </data>
+  <data name="SelectBridgeDismantleUserFunctionalName" xml:space="preserve">
+    <value>Отобразить демонтируемые мосты</value>
+  </data>
+  <data name="CancelGroupingBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancelGroupingBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroupBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Combined" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Combined.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArchedThreeHinged" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedThreeHinged.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeRepairsShortUserFunctionalName" xml:space="preserve">
+    <value>Ремонт</value>
+  </data>
+  <data name="SelectBridgeDismantleShortUserFunctionalName" xml:space="preserve">
+    <value>Демонтировать</value>
+  </data>
+  <data name="CrossbarAndStrut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrossbarAndStrut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeRepairsGroupName" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="EditBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditBridgeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContinuousBeamConstantHeight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContinuousBeamConstantHeight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeDismantleGroupName" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="BindBridgeToVillageUserFunctionalName" xml:space="preserve">
+    <value>Привязать мост к ближайшему населённому пункту</value>
+  </data>
+  <data name="SelectBridgeRepairsUserFunctionalName" xml:space="preserve">
+    <value>Отобразить ремонтируемые мосты</value>
+  </data>
+  <data name="SelectBridgeSetImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeSetSmallImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrameConsole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrameConsole.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddBridgeUserFunctionalName" xml:space="preserve">
+    <value>Добавить мост</value>
+  </data>
+  <data name="CancelBridgesGroupName" xml:space="preserve">
+    <value>Функционал изменений</value>
+  </data>
+  <data name="ArchedHingeless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedHingeless.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeamCantilever" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeamCantilever.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardBridgesUserFunctionalName" xml:space="preserve">
+    <value>Вернуть изменение</value>
+  </data>
+  <data name="EditGeometryBridgeGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="AcceptBridgesUserFunctionalName" xml:space="preserve">
+    <value>Сохранить все изменения</value>
+  </data>
+  <data name="CancelGroupingBridgesGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="SelectBridgeTemporaryShortUserFunctionalName" xml:space="preserve">
+    <value>Временный</value>
+  </data>
+  <data name="BridgeLayerAlias" xml:space="preserve">
+    <value>Мостовые сооружения</value>
+  </data>
+  <data name="Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditBridgeUserFunctionalName" xml:space="preserve">
+    <value>Редактировать мост</value>
+  </data>
+  <data name="RotateBridgeGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="SelectBridgeTemporaryImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectBridgeTemporarySmallImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardBridgesGroupName" xml:space="preserve">
+    <value>Функционал изменений</value>
+  </data>
+  <data name="BeamCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeamCut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirectoryBridgesUserFunctionalName" xml:space="preserve">
+    <value>Справочник</value>
+  </data>
+  <data name="GroupBridgesUserFunctionalName" xml:space="preserve">
+    <value>Сгруппировать геообъекты</value>
+  </data>
+  <data name="ArchedBeamExternallySpacerRideTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedBeamExternallySpacerRideTop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplitGeometryBridgesUserFunctionalName" xml:space="preserve">
+    <value>Разделить геометрию</value>
+  </data>
+  <data name="DropDownSwing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DropDownSwing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrameSuspended" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrameSuspended.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteBridgeImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArchedFarmRideMiddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedFarmRideMiddle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveBridgeUserFunctionalName" xml:space="preserve">
+    <value>Переместить мост</value>
+  </data>
+  <data name="ArchedTightening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedTightening.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotateBridgeImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotateGeometryImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectBridgeRequiredUserFunctionalName" xml:space="preserve">
+    <value>Отобразить требуемые мосты</value>
+  </data>
+  <data name="SplitGeometryBridgesGroupName" xml:space="preserve">
+    <value>Работа с геометрией</value>
+  </data>
+  <data name="FrameVShapedSupports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrameVShapedSupports.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CableStayedWithStiffeningBeam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CableStayedWithStiffeningBeam.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeamTemperatureContinuous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeamTemperatureContinuous.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArchedDoubleHinged" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchedDoubleHinged.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeInfoImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObjectInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeSummaryGroupName" xml:space="preserve">
+    <value>Ведомости</value>
+  </data>
+  <data name="SelectBridgeTemporaryGroupName" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Podkosnaya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Podkosnaya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATVUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATVUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ITSGIS_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSGIS Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ITSBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSBackground1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ITSGISIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSGISIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ITSLogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITSLogo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aqueduct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aqueduct.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bridge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CattleDrive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CattleDrive.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Drawbridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drawbridge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Estacada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estacada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FillType" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FillType.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlyingFerry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlyingFerry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Overpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overpass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pontoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pontoon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tunnel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tunnel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Viaduct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Viaduct.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_AngleButtressRetainingWallAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_AngleButtressRetainingWallAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_ArchedSpacerBridgeAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_ArchedSpacerBridgeAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_Columnar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_Columnar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_ColumnarCrossbarAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_ColumnarCrossbarAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_ColumnarCrossbarless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_ColumnarCrossbarless.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_ColumnarWithVShapedBranch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_ColumnarWithVShapedBranch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_DoubleRowPile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_DoubleRowPile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_DoubleRowPileAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_DoubleRowPileAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_DoubleRowRack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_DoubleRowRack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_DoubleRowRackAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_DoubleRowRackAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_Frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_Massive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_Massive.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_MassiveAbutmentBackWalls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_MassiveAbutmentBackWalls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_MassiveColumnar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_MassiveColumnar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_MassiveCrumblingAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_MassiveCrumblingAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_MassiveWithCrossbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_MassiveWithCrossbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_RackWithSwingingStruts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_RackWithSwingingStruts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_RageAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_RageAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_Ragged" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_Ragged.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleColumnWithCrossbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleColumnWithCrossbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleRowPile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleRowPile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleRowPileAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleRowPileAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleRowRack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleRowRack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleRowRackAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleRowRackAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SingleRowRackWithBuiltInCrossbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SingleRowRackWithBuiltInCrossbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_StubAbutment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_StubAbutment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SuspensionBridgeAnchor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SuspensionBridgeAnchor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_SuspensionBridgePylon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_SuspensionBridgePylon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST_WallSupports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST_WallSupports.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AcceptBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AcceptBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeSummaryImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BridgeSummaryImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancelBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardBridgesImageSource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ForwardBridgesImageSource.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgeLayerOrderIndex" xml:space="preserve">
+    <value>760</value>
+  </data>
+  <data name="EJT_ClosedMetalCompensator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_ClosedMetalCompensator.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_ClosedTormaJoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_ClosedTormaJoint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_FilledMasticAndMetalCompensator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_FilledMasticAndMetalCompensator.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_FilledMasticStellEdging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_FilledMasticStellEdging.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_FilledRubberOrPolymerCompensator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_FilledRubberOrPolymerCompensator.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_FilledTwoRubberCompensatorModular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_FilledTwoRubberCompensatorModular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_OverlappedCombType" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_OverlappedCombType.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_OverlappedSlidingType" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_OverlappedSlidingType.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_OverlappedSteelSliding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_OverlappedSteelSliding.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EJT_OverlappedSteelSlidingDoubleSidedBalanced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJT_OverlappedSteelSlidingDoubleSidedBalanced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

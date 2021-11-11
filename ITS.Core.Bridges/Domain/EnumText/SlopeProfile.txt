@@ -1,0 +1,10 @@
+﻿Профиль уклона
+SlopeProfile
+Λ 
+ConvexCurve
+V 
+ConcaveCurve
+/ 
+Up
+\\ 
+Down

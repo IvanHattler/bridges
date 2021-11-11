@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="ITS.Core.Bridges.Domain.Bridge" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2" Width="3.25" />
+    <Members>
+      <Method Name="Bridge" Hidden="true" />
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="GetCode" Hidden="true" />
+      <Method Name="GetCopiedList" Hidden="true" />
+      <Method Name="GetExpansionJointTypesString" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="GetLongitudeScheme" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AoyghhFsxUaxdyAPIgAGUsdiDIUFc8CrLmhwgXuNFDQ=</HashCode>
+      <FileName>Domain\Bridge.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BuildingOrganization" />
+      <Property Name="AdapterPlatesAvailability" />
+      <Property Name="Communications" />
+      <Property Name="ConesStrengthening" />
+      <Property Name="ConstructionType" />
+      <Property Name="CoverType" />
+      <Property Name="ExploitOrganization" />
+      <Property Name="FeatureObject" />
+      <Property Name="DrainageType" />
+      <Property Name="InfoOfRepairsForReport" />
+      <Property Name="LocationInPlan" />
+      <Property Name="MoveType" />
+      <Property Name="ProjectOrganization" />
+      <Property Name="ProtectionOnApproach" />
+      <Property Name="ProtectionOnBridge" />
+      <Property Name="QualityBridgeType" />
+      <Property Name="RailingsType" />
+      <Property Name="RegulatoryStructures" />
+      <Property Name="RoadCategory" />
+      <Property Name="SlopeLateralProfile" />
+      <Property Name="Sidewalks" />
+      <Property Name="SlopeLongitudinalProfileAfter" />
+      <Property Name="SlopeLongitudinalProfileBefore" />
+      <Property Name="Status" />
+      <Property Name="Arrangements" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Documentations" />
+      <Property Name="Defects" />
+      <Property Name="InfoOfRepairs" />
+      <Property Name="Obstacles" />
+      <Property Name="Photos" />
+      <Property Name="SpanStructures" />
+      <Property Name="Supports" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.BridgeObstacle" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="BridgeObstacle" Hidden="true" />
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEgAAAAAQAAAAAAIgAAYAAAAAAAAA=</HashCode>
+      <FileName>Domain\BridgeObstacle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bridge" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.BridgeSupport" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="2" Width="3" />
+    <Members>
+      <Method Name="BridgeSupport" Hidden="true" />
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="operator !=" Hidden="true" />
+      <Method Name="operator ==" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EECoYEAAAAAACCAEgGCAFACEYEQCBIgADAARAAgwAiA=</HashCode>
+      <FileName>Domain\BridgeSupport.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FoundationType" />
+      <Property Name="IntermediateType" />
+      <Property Name="TypicalProject" />
+      <Property Name="ShoreType" />
+      <Property Name="Bridge" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.Defect" BaseTypeListCollapsed="true">
+    <Position X="44.5" Y="2" Width="3" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Defect" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAKAAAAAACAEAAIAAQAAAAAAAIgAAQAAAAAACAA=</HashCode>
+      <FileName>Domain\Defect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bridge" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.DefectScrollSection">
+    <Position X="5" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="DefectScrollSection" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAKAEAAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DefectScrollSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.DefectType">
+    <Position X="16" Y="2" Width="3" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="DefectType" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAACAEAAAAAAQQAAAAAIAAAAAAAIAAAAA=</HashCode>
+      <FileName>Domain\DefectType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Section" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.DocumentationInfo" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="2" Width="2" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="DocumentationInfo" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAACAEAEAAAAAAAAAAAIgAEAAAAAAAAgA=</HashCode>
+      <FileName>Domain\DocumentationInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.InfoOfRepairs" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="InfoOfRepairs" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEIEAAAAAAAAAAAIgBAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\InfoOfRepairs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Jobs" />
+      <Property Name="Bridge" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.Material" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="Material" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEgAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Material.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.Protection" BaseTypeListCollapsed="true">
+    <Position X="22" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="Protection" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAACAEgAAAAAAAAAAAAIAAAYAAAAAAAAA=</HashCode>
+      <FileName>Domain\Protection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.SpanBeam" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="SpanBeam" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAABAAAACAEgAAAAAAAAAAAAIAAAYAAAAAEAAA=</HashCode>
+      <FileName>Domain\SpanBeam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="Material" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.SpanStructure" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="2" Width="3" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="operator !=" Hidden="true" />
+      <Method Name="operator ==" Hidden="true" />
+      <Method Name="SpanStructure" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AGEgFiBARKYoCSAGgGEAQDDAFEAAgIgAAgeggQAwOyA=</HashCode>
+      <FileName>Domain\SpanStructure.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bridge" />
+      <Property Name="ConstructionRoadway" />
+      <Property Name="CrossJoin" />
+      <Property Name="ExpansionJointType" />
+      <Property Name="LongitudinalPile" />
+      <Property Name="Material" />
+      <Property Name="PlateMaterial" />
+      <Property Name="SlopeLongitudinalProfile" />
+      <Property Name="SpanStructureType" />
+      <Property Name="SpanTypeMotionless" />
+      <Property Name="SpanTypeMovable" />
+      <Property Name="System" />
+      <Property Name="TypicalProject" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.Territory">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="Territory" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEAAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Territory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITS.Core.Bridges.Domain.TypicalProject" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEgAAAACQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\TypicalProject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ITS.Core.Domain.DomainObject&lt;IdT&gt;" Collapsed="true">
+    <Position X="23" Y="0.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ITS.Core.Domain.Organizations.Organization" Collapsed="true">
+    <Position X="19.75" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="AddressToString" Hidden="true" />
+      <Method Name="CopyFrom" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="Organization" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ITS.Core.Domain.FeatureObjects.FeatureObject" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ITS.Core.Domain.Photos.Photo" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ITS.Core.Bridges.Domain.IBridgeReferenceable" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IBridgeReferenceable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ITS.Core.Bridges.Domain.INumberable" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\INumberable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.AdapterPlatesAvailability" Collapsed="true">
+    <Position X="17.5" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Enums\AdapterPlatesAvailability.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.Communications" Collapsed="true">
+    <Position X="3.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAgAAgBAgAEBAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Domain\Enums\Communications.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.Strenghtening" Collapsed="true">
+    <Position X="14.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEBACAACAAAAAAAAAAAAgABAABABIAAAAEAAAA=</HashCode>
+      <FileName>Domain\Enums\Strenghtening.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.BridgeType" Collapsed="true">
+    <Position X="6.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAASEAAQgAAAAAAAAAAAAAAAAAAAgBAAAAAAAEAgg=</HashCode>
+      <FileName>Domain\Enums\BridgeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.CoverType" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAEAEAAAAAAAAAACAIAAAAAEAAACAAAAAAAEAA=</HashCode>
+      <FileName>Domain\Enums\CoverType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.DrainageType" Collapsed="true">
+    <Position X="14.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAEAAAEAAAAAAAAAAACAAQAAAAAQAAIAAAEAAAA=</HashCode>
+      <FileName>Domain\Enums\DrainageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.LocationInPlan" Collapsed="true">
+    <Position X="14.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAACAAAAAAAAAAAAAAAgAABAAAAAAAAA=</HashCode>
+      <FileName>Domain\Enums\LocationInPlan.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.MoveType" Collapsed="true">
+    <Position X="6.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAECAAQAAAAAAAAAAAIAAAAAAABAAEAAAAAAIAA=</HashCode>
+      <FileName>Domain\Enums\MoveType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.Quality" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Domain\Enums\Quality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.RailingsType" Collapsed="true">
+    <Position X="14.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEgAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEIAAA=</HashCode>
+      <FileName>Domain\Enums\RailingsType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.RegulatoryStructures" Collapsed="true">
+    <Position X="14.5" Y="13" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAAAAAhAAAAAAAAAAAAAAAAEAEQAAA=</HashCode>
+      <FileName>Domain\Enums\RegulatoryStructures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.RoadCategory" Collapsed="true">
+    <Position X="6.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAQAgE=</HashCode>
+      <FileName>Domain\Enums\RoadCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.SlopeProfile" Collapsed="true">
+    <Position X="16.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAI=</HashCode>
+      <FileName>Domain\Enums\SlopeProfile.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.SidewalkType" Collapsed="true">
+    <Position X="6.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAEAAAAAgAAAAAAAAAAAIIAAAAQAAgAABAEABAA=</HashCode>
+      <FileName>Domain\Enums\SidewalkType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.BridgeStatus" Collapsed="true">
+    <Position X="14.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEARAAAAAAAAAAAAAAAAAIAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Enums\BridgeStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.Arrangements" Collapsed="true">
+    <Position X="6.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAEAAAAAAAAAAAAEAAAAAAAAAAAAgAABAQEAAAA=</HashCode>
+      <FileName>Domain\Enums\Arrangements.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ProtectionType" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAQEAAgAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Enums\ProtectionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ObstacleType" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAEhIACAAAQAIAAACAKAQAAIAAEAAQABAAAAAAg=</HashCode>
+      <FileName>Domain\Enums\ObstacleType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ConstructionRoadway" Collapsed="true">
+    <Position X="35.25" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAEiAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAQAAAA=</HashCode>
+      <FileName>Domain\Enums\ConstructionRoadway.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.CrossJoinMethod" Collapsed="true">
+    <Position X="38.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABAAAAAAAABIEAAAAAAAEAAAAAAIAEAEAAAA=</HashCode>
+      <FileName>Domain\Enums\CrossJoinMethod.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ExpansionJointType" Collapsed="true">
+    <Position X="36.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAACFAAAAAAAAAAEAAAEAAAAAQAACAAAAEAAAAACA=</HashCode>
+      <FileName>Domain\Enums\ExpansionJointType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.SpanStructureType" Collapsed="true">
+    <Position X="39.25" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAEAgAAIAAAAAAAAAAQAAAJAAAAABAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Enums\SpanStructureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.BridgeMotionlessPartSupport" Collapsed="true">
+    <Position X="31" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAEBAAhAQAAgAAAAEAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Domain\Enums\BridgeMotionlessPartSupport.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.BridgeMovablePartSupport" Collapsed="true">
+    <Position X="31" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAEAAAhAQAAggAAAAAAAABAAAAAAIAAAAIEAAAA=</HashCode>
+      <FileName>Domain\Enums\BridgeMovablePartSupport.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.SpanStructureSystem" Collapsed="true">
+    <Position X="31.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>kQCCIAkBQAAEQAgARABBAAIAAASIgIgCAAAACAAAAAE=</HashCode>
+      <FileName>Domain\Enums\SpanStructureSystem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.FoundationType" Collapsed="true">
+    <Position X="38.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABAAAAAAAABAAAAAIAACAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Domain\Enums\FoundationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.IntermediateSupportType" Collapsed="true">
+    <Position X="45.25" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAEAmECAEAEAAQAAAAIAACAAAAAACACAEAEAE=</HashCode>
+      <FileName>Domain\Enums\IntermediateSupportType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ReconstructionJobs" Collapsed="true">
+    <Position X="38.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAsAEAAAAABBCAAAAAAAAAAAAAAABAAAAAAAEAAMQ=</HashCode>
+      <FileName>Domain\Enums\ReconstructionJobs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.SpanBeamType" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgEAAAAAAAAAAAAACAAgAAEAAAEAAAAAA=</HashCode>
+      <FileName>Domain\Enums\SpanBeamType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ITS.Core.Bridges.Domain.Enums.ShoreSupportType" Collapsed="true">
+    <Position X="45.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAADFCAAgIAIAAgQAAAAAgAAAgAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Enums\ShoreSupportType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

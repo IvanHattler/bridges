@@ -1,0 +1,17 @@
+﻿[Flags]
+Регуляционные сооружения
+RegulatoryStructures
+Регуляционных сооружений нет
+None
+Конус
+Cone
+Укрепление берега различными конструкциями
+StrengtheningCoastVariousStructures
+Подпорная или заборная стенка
+RetainingOrFenceWall
+Струенаправляющая дамба с различными видами укрепления откосов
+JetGuideSlopeReinforcement
+Струенаправляющая дамба с траверсами
+JetGuideWithTraverses
+Струенаправляющая дамба и укрепление берега
+JetGuideShoreReinforcement

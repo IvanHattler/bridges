@@ -1,0 +1,17 @@
+﻿[Flags]
+Тип движения
+MoveType
+Автомобильный
+Car
+Железнодорожный
+Railway
+Пешеходный и велосипедный
+Pedestrian
+Для животных
+ForAnimals
+Для подачи воды
+ForWaterSupply
+Трубопроводный
+Pipeline
+Метромост
+MetroBridge

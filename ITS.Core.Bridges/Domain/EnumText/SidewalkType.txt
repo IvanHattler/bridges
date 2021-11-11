@@ -1,0 +1,24 @@
+﻿Тип тротуара
+SidewalkType
+В уровне одежды по плите проезжей части
+ClothingAlongTheSlab
+Пониженные в уровне проезжей части из сборных плит (блоков)
+LoweredCarriagewayBlocks
+Пониженные в уровне проезжей части с монолитной плитой
+LoweredCarriagewayMonolithicSlab
+Повышенного типа из сборных типовых блоков
+IncreasedFromBlocks
+Повышенного типа из свай
+IncreasedFromPiles
+Тротуаров нет (зоны для прохода пешеходов)
+None
+Деревянные конструкции
+Wood
+На консолях, повышенного типа
+ConsolesIncreased
+На консолях, в уровне проезжей части	
+ConsolesCarriageway
+На консолях, пониженного типа
+ConsolesLowered
+Нет данных
+NoData

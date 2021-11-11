@@ -1,0 +1,16 @@
+﻿Тип перил
+RailingsType
+Перила отсутствуют
+None
+Металлические (секционные или непрерывные)
+Metallic
+Железобетонный поручень с металлической решеткой
+FerroncreteMetalGrating
+Железобетонные (решетчатые или со сплошной стенкой)
+FerroconcreteLlatticeOrSolidWall
+Деревянные
+Wood
+Комбинированные
+Combined
+Нет данных
+NoData

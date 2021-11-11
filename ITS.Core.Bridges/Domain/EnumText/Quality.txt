@@ -1,0 +1,14 @@
+﻿Качество мостового сооружения
+Quality
+1
+Grade1
+2
+Grade2
+3
+Grade3
+4
+Grade4
+5
+Grade5
+Нет данных
+NoData

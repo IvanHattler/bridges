@@ -1,0 +1,38 @@
+﻿Тип препятствия
+ObstacleType
+Река
+River
+Ручей
+Stream
+Суходол
+Sukhodol
+Железная дорога
+Railway
+Автодорога
+Road
+Овраг
+Ravine
+Балка
+Beam
+Затапливаемый луг
+FloodedMeadow
+Ущелье
+Gorge
+Болото
+Swamp
+Плотина
+Dam
+Канал
+Channel
+Озеро
+Lake
+Скотопрогон
+CattleDrive
+Линия электропередач
+PowerLine
+Тоннельный путепровод 
+TunnelOverpass
+Другие препятствия
+Other
+Нет данных
+NoData

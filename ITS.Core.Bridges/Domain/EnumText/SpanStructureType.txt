@@ -1,0 +1,20 @@
+﻿Тип главной опоры
+SpanStructureType
+Плита
+Plate
+Плита П-образная
+UShapedPlate
+Балка ребристая с диафрагмами
+RibbedBeamWithDiaphragms
+Балка ребристая без диафрагм
+RibbedBeamWithoutDiaphragms
+Коробка
+Box
+Коробка многоячеистая
+MultiCellBox
+Ферма
+Farm
+Прочее
+Other
+Нет данных
+NoData

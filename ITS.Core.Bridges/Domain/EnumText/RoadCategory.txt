@@ -1,0 +1,16 @@
+﻿Категория дороги
+RoadCategory
+IА
+IA
+IБ
+IB
+IВ
+IC
+II
+II
+III
+III
+IV
+IV
+V
+V

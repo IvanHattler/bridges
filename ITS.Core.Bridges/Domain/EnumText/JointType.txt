@@ -1,0 +1,24 @@
+﻿Тип стыков
+JointType
+Клепка
+Riveting
+Сварка
+Welding
+Высокопрочные болты
+HighStrengthBolts
+Мокрые со сваркой выпусков
+WetWeldedOutlets
+Клеенные зубчатые
+GluedToothed
+Полусухие
+SemiDry
+Сухие
+Dry
+Клееный с уступом
+GuedWithLedge
+Клееный плоский
+GluedFlat
+Бетонируемые
+Concreted
+Нет данных
+NoData

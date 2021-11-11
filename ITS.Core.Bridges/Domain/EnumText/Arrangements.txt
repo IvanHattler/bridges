@@ -1,0 +1,17 @@
+﻿[Flags]
+Обустройство
+Arrangements
+Отсутствуют
+None
+Лестницы
+Stairs
+Тележки смотровые
+InspectionTrolleys
+Люльки
+Cradles
+Смотровые хода
+ObservationMoves
+Люки
+Hatches
+Двери
+Doors

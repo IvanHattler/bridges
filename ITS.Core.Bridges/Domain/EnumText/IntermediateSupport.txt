@@ -1,0 +1,38 @@
+﻿Тип промежуточной опоры
+IntermediateSupportType
+Массивная
+Massive
+Массивная с ригелем
+MassiveWithCrossbar
+Массивно-столбчатая
+MassiveColumnar
+Одностолбчатая с ригелем
+SingleColumnWithCrossbar
+Столбчатая безригельная
+ColumnarCrossbarless
+Однорядная свайного типа
+SingleRowPile
+Двухрядная свайного типа
+DoubleRowPile
+Однорядная стоечного типа
+SingleRowRack
+Двухрядная стоечного типа
+DoubleRowRack
+Однорядная стоечная со встроенным ригелем
+SingleRowRackWithBuiltInCrossbar
+Столбчатая
+Columnar
+Опоры-стенки
+WallSupports
+Ряжевая
+Ragged
+Стоечная с качающимися стойками
+RackWithSwingingStruts
+Столбчатая с V-образным разветвлением
+ColumnarWithVShapedBranch
+Рамная
+Frame
+Пилон висячего моста
+SuspensionBridgePylon
+Нет данных
+NoData

@@ -1,0 +1,27 @@
+﻿[Flags]
+Виды основных работ при реконструкции и ремонте
+ReconstructionJobs
+Реконструкция или ремонт не проводились
+None
+Замена мостового полотна
+ReplacingBridgeDeck
+Замена тротуаров
+ReplacingSidewalks
+Усиление опор
+ReinforcementSupports
+Усиление пролетных строений
+ReinforcementSpans
+Уширение пролетных строений и опор приставными элементами с одной стороны
+WideningAttachOneSide
+Уширение пролетных строений и опор приставными элементами несимметрично с двух сторон
+WideningAttachTwoSideSymmetric
+Уширение пролетных строений и опор приставными элементами симметрично с двух сторон
+WideningAttachTwoSideAsymmetric
+Уширение пролетных строений накладной плитой
+WideningOverheadSlab
+Уширение проезжей части за счет тротуаров
+WideningSidewalk
+Замена балок пролетных строений
+ReplacingSpanBeams
+Постройка параллельного мостового сооружения
+BuildParallelBridge

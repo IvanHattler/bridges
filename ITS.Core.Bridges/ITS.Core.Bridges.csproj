@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67357310-F809-4BFA-8129-E84F0427195A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITS.Core.Bridges</RootNamespace>
+    <AssemblyName>ITS.Core.Bridges</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ITS.Core.Bridges.xml</DocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ITS.Core.Bridges.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Version.cs">
+      <Link>Version.cs</Link>
+    </Compile>
+    <Compile Include="DataInterfaces\IDocumentationInfoDAO.cs" />
+    <Compile Include="DataInterfaces\IInfoOfRepairsDAO.cs" />
+    <Compile Include="DataInterfaces\IDefectScrollSectionDAO.cs" />
+    <Compile Include="DataInterfaces\IDefectTypeDAO.cs" />
+    <Compile Include="DataInterfaces\ITerritoryDAO.cs" />
+    <Compile Include="DataInterfaces\ITypicalProjectDAO.cs" />
+    <Compile Include="DataInterfaces\IMaterialDAO.cs" />
+    <Compile Include="DataInterfaces\IDefectDAO.cs" />
+    <Compile Include="DataInterfaces\ISpanStructureDAO.cs" />
+    <Compile Include="DataInterfaces\IBridgeSupportDAO.cs" />
+    <Compile Include="DataInterfaces\IBridgeObstacleDAO.cs" />
+    <Compile Include="DataInterfaces\IBridgeDAO.cs" />
+    <Compile Include="Domain\Base\EnumStrings.cs" />
+    <Compile Include="Domain\BridgeObstacle.cs" />
+    <Compile Include="Domain\Defect.cs" />
+    <Compile Include="Domain\DefectScrollSection.cs" />
+    <Compile Include="Domain\DefectType.cs" />
+    <Compile Include="Domain\DocumentationInfo.cs" />
+    <Compile Include="Domain\EnumStrings\LocationInPlanStrings.cs" />
+    <Compile Include="Domain\EnumStrings\SlopeProfileUserStrings.cs" />
+    <Compile Include="Domain\Enums\AdapterPlatesAvailability.cs" />
+    <Compile Include="Domain\BridgeSupport.cs" />
+    <Compile Include="Domain\Enums\LocationInPlan.cs" />
+    <Compile Include="Domain\IBridgeReferenceable.cs" />
+    <Compile Include="Domain\InfoOfRepairs.cs" />
+    <Compile Include="Domain\INumberable.cs" />
+    <Compile Include="Domain\Material.cs" />
+    <Compile Include="Domain\SpanBeam.cs" />
+    <Compile Include="Domain\EnumStrings\BridgeStatusStrings.cs" />
+    <Compile Include="Domain\EnumStrings\BridgeTypeStrings.cs" />
+    <Compile Include="Domain\EnumStrings\MoveTypeStrings.cs" />
+    <Compile Include="Domain\EnumStrings\QualityStrings.cs" />
+    <Compile Include="Domain\EnumStrings\SpanStructureSystemStrings.cs" />
+    <Compile Include="Domain\Enums\SpanStructureSystem.cs" />
+    <Compile Include="Domain\Enums\FoundationType.cs" />
+    <Compile Include="Domain\Enums\ConstructionType.cs" />
+    <Compile Include="Domain\Enums\MoveType.cs" />
+    <Compile Include="Domain\Enums\BridgeStatus.cs" />
+    <Compile Include="Domain\Enums\BridgeType.cs" />
+    <Compile Include="Domain\Bridge.cs" />
+    <Compile Include="Domain\Protection.cs" />
+    <Compile Include="Domain\SpanStructure.cs" />
+    <Compile Include="Domain\Territory.cs" />
+    <Compile Include="Domain\TypicalProject.cs" />
+    <Compile Include="Helpers\EquStringComparerIgnoreCase.cs" />
+    <Compile Include="Helpers\CompareHelper.cs" />
+    <Compile Include="Helpers\DefectParamsParser.cs" />
+    <Compile Include="Helpers\DefectsHelper.cs" />
+    <Compile Include="Helpers\DesignBurdensInfo.cs" />
+    <Compile Include="ManagerInterfaces\IDocumentationInfoManager.cs" />
+    <Compile Include="ManagerInterfaces\IInfoOfRepairsManager.cs" />
+    <Compile Include="ManagerInterfaces\IDefectScrollSectionManager.cs" />
+    <Compile Include="ManagerInterfaces\IDefectTypeManager.cs" />
+    <Compile Include="ManagerInterfaces\ITerritoryManager.cs" />
+    <Compile Include="ManagerInterfaces\ITypicalProjectManager.cs" />
+    <Compile Include="ManagerInterfaces\IMaterialManager.cs" />
+    <Compile Include="ManagerInterfaces\IDefectManager.cs" />
+    <Compile Include="ManagerInterfaces\ISpanStructureManager.cs" />
+    <Compile Include="ManagerInterfaces\IBridgeSupportManager.cs" />
+    <Compile Include="ManagerInterfaces\IBridgeObstacleManager.cs" />
+    <Compile Include="ManagerInterfaces\IBridgeManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceInterfaces\IDocumentationInfoService.cs" />
+    <Compile Include="ServiceInterfaces\IInfoOfRepairsService.cs" />
+    <Compile Include="ServiceInterfaces\IDefectScrollSectionService.cs" />
+    <Compile Include="ServiceInterfaces\IDefectTypeService.cs" />
+    <Compile Include="ServiceInterfaces\ITerritoryService.cs" />
+    <Compile Include="ServiceInterfaces\ITypicalProjectService.cs" />
+    <Compile Include="ServiceInterfaces\IMaterialService.cs" />
+    <Compile Include="ServiceInterfaces\IDefectService.cs" />
+    <Compile Include="ServiceInterfaces\ISpanStructureService.cs" />
+    <Compile Include="ServiceInterfaces\IBridgeSupportService.cs" />
+    <Compile Include="ServiceInterfaces\IBridgeObstacleService.cs" />
+    <Compile Include="ServiceInterfaces\IBridgeService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DomainClassDiagram.cd" />
+    <None Include="Domain\EnumText\namespaces.cfg" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Domain\EnumText\BridgeType.txt" />
+    <None Include="Domain\EnumText\MoveType.txt" />
+    <None Include="Domain\EnumText\Arrangements.txt" />
+    <None Include="Domain\EnumText\Communications.txt" />
+    <None Include="Domain\EnumText\CoverType.txt" />
+    <None Include="Domain\EnumText\FoundationType.txt" />
+    <None Include="Domain\EnumText\JointType.txt" />
+    <None Include="Domain\EnumText\RoadCategory.txt" />
+    <None Include="Domain\EnumText\SpanStructureSystem.txt" />
+    <None Include="Domain\EnumText\ConstructionRoadway.txt" />
+    <None Include="Domain\EnumText\CrossJoinMethod.txt" />
+    <None Include="Domain\EnumText\DrainageType.txt" />
+    <None Include="Domain\EnumText\ExpansionJointType.txt" />
+    <None Include="Domain\EnumText\ProtectionType.txt" />
+    <None Include="Domain\EnumText\RegulatoryStructures.txt" />
+    <None Include="Domain\EnumText\SidewalkType.txt" />
+    <None Include="Domain\EnumText\RailingsType.txt" />
+    <None Include="Domain\EnumText\Strenghtening.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <!--Generated:25.08.2020 10:59:55-->
+    <Compile Include="Domain\Enums\ConstructionRoadway.cs" />
+    <Compile Include="Domain\EnumStrings\ConstructionRoadwayStrings.cs" />
+    <Compile Include="Domain\Enums\DrainageType.cs" />
+    <Compile Include="Domain\EnumStrings\DrainageTypeStrings.cs" />
+    <Compile Include="Domain\Enums\ExpansionJointType.cs" />
+    <Compile Include="Domain\EnumStrings\ExpansionJointTypeStrings.cs" />
+    <Compile Include="Domain\Enums\ProtectionType.cs" />
+    <Compile Include="Domain\EnumStrings\ProtectionTypeStrings.cs" />
+    <Compile Include="Domain\Enums\RailingsType.cs" />
+    <Compile Include="Domain\EnumStrings\RailingsTypeStrings.cs" />
+    <Compile Include="Domain\Enums\SidewalkType.cs" />
+    <Compile Include="Domain\EnumStrings\SidewalkTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:25.08.2020 11:28:49-->
+    <Compile Include="Domain\Enums\CrossJoinMethod.cs" />
+    <Compile Include="Domain\EnumStrings\CrossJoinMethodStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:25.08.2020 15:58:47-->
+    <Compile Include="Domain\Enums\Strenghtening.cs" />
+    <Compile Include="Domain\EnumStrings\StrenghteningStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:25.08.2020 16:14:00-->
+    <Compile Include="Domain\Enums\Arrangements.cs" />
+    <Compile Include="Domain\EnumStrings\ArrangementsStrings.cs" />
+    <Compile Include="Domain\Enums\Communications.cs" />
+    <Compile Include="Domain\EnumStrings\CommunicationsStrings.cs" />
+    <Compile Include="Domain\Enums\RegulatoryStructures.cs" />
+    <Compile Include="Domain\EnumStrings\RegulatoryStructuresStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:26.08.2020 11:43:23-->
+    <Compile Include="Domain\Enums\CoverType.cs" />
+    <Compile Include="Domain\EnumStrings\CoverTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:26.08.2020 17:04:41-->
+    <Compile Include="Domain\Enums\RoadCategory.cs" />
+    <Compile Include="Domain\EnumStrings\RoadCategoryStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Domain\EnumText\BridgeStatus.txt" />
+    <None Include="Domain\EnumText\ReconstructionJobs.txt" />
+    <None Include="Domain\EnumText\SlopeProfile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:01.09.2020 13:51:05-->
+    <Compile Include="Domain\Enums\SlopeProfile.cs" />
+    <Compile Include="Domain\EnumStrings\SlopeProfileStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:01.09.2020 16:11:30-->
+    <Compile Include="Domain\Enums\ReconstructionJobs.cs" />
+    <Compile Include="Domain\EnumStrings\ReconstructionJobsStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:03.09.2020 10:54:17-->
+    <Compile Include="Domain\Enums\JointType.cs" />
+    <Compile Include="Domain\EnumStrings\JointTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:03.09.2020 11:27:39-->
+    <Compile Include="Domain\EnumStrings\FoundationTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:15.09.2020 11:26:53-->
+    <Compile Include="Domain\EnumStrings\AdapterPlatesAvailabilityStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Domain\EnumText\AdapterPlatesAvailability.txt" />
+    <Content Include="Domain\EnumText\BridgeMotionlessPartSupport.txt" />
+    <Content Include="Domain\EnumText\BridgeMovablePartSupport.txt" />
+    <Content Include="Domain\EnumText\LocationInPlan.txt" />
+    <Content Include="Domain\EnumText\ObstacleType.txt" />
+    <Content Include="Domain\EnumText\IntermediateSupport.txt" />
+    <Content Include="Domain\EnumText\Quality.txt" />
+    <Content Include="Domain\EnumText\ShoreSupport.txt" />
+    <Content Include="Domain\EnumText\SpanBeamType.txt" />
+    <Content Include="Domain\EnumText\SpanStructureType.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:12.10.2020 18:41:59-->
+    <Compile Include="Domain\Enums\SpanStructureType.cs" />
+    <Compile Include="Domain\EnumStrings\SpanStructureTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:26.10.2020 13:02:24-->
+    <Compile Include="Domain\Enums\SpanBeamType.cs" />
+    <Compile Include="Domain\EnumStrings\SpanBeamTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:12.01.2021 11:13:11-->
+    <Compile Include="Domain\Enums\ObstacleType.cs" />
+    <Compile Include="Domain\EnumStrings\ObstacleTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:27.01.2021 11:15:30-->
+    <Compile Include="Domain\Enums\BridgeMotionlessPartSupport.cs" />
+    <Compile Include="Domain\EnumStrings\BridgeMotionlessPartSupportStrings.cs" />
+    <Compile Include="Domain\Enums\BridgeMovablePartSupport.cs" />
+    <Compile Include="Domain\EnumStrings\BridgeMovablePartSupportStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:27.01.2021 11:28:18-->
+    <Compile Include="Domain\Enums\ShoreSupportType.cs" />
+    <Compile Include="Domain\EnumStrings\ShoreSupportTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--Generated:27.01.2021 11:41:27-->
+    <Compile Include="Domain\Enums\IntermediateSupportType.cs" />
+    <Compile Include="Domain\EnumStrings\IntermediateSupportTypeStrings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoUtility, Version=3.1.6.0, Culture=neutral, PublicKeyToken=8055d2e1a20cc207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\GeoUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.Core, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.GIS.GeoAPI, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.GIS.GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.ProjectBase.Data, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.ProjectBase.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ITS.ProjectBase.Utils, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\ITS.ProjectBase.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms, Version=5.0.414.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=abefde60aa51e9a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.GeoTools, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.GeoTools.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.MsSqlSpatial, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.MsSqlSpatial.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.PostGis, Version=1.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NetTopologySuite.IO.PostGis.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Spatial, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\NHibernate.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="Serialize.Linq, Version=1.1.4878.20799, Culture=neutral, PublicKeyToken=25bcc11ba213b377, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\Serialize.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ITS.Core.5.3.8078.3\lib\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y /S "$(TargetPath)" "$(SolutionDir)binDistrib\$(ConfigurationName)\"
+exit /B 0</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--Generated:15.02.2021 16:12:26-->
+    <Compile Include="Domain\Enums\Quality.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+﻿Статическая система мостового сооружения
+SpanStructureSystem
+Балочно-разрезная
+BeamCut
+Балочная неразрезная с постоянной высотой пролетного строения
+ContinuousBeamConstantHeight
+Балочная неразрезная с переменной высотой пролетного строения
+ContinuousBeamVariableHeight
+Балочно-консольная
+BeamCantilever
+Балочно-консольная с подвесным пролетом
+BeamCantileverSuspendedSpan
+Балочная температурно-неразрезная
+BeamTemperatureContinuous
+Арочная трехшарнирная
+ArchedThreeHinged
+Арочная двухшарнирная
+ArchedDoubleHinged
+Арочная с затяжкой
+ArchedTightening
+Арочная бесшарнирная
+ArchedHingeless
+Арочно-балочная внешне распорная с ездой поверху
+ArchedBeamExternallySpacerRideTop
+Арочно-балочная внешне безраспорная
+ArchedBeamExternallyWithoutExpansion
+Арочная ферма с ездой посередине
+ArchedFarmRideMiddle
+Висячая с заделкой канатов в анкерных устоях
+HangingEmbeddedRopesInAnchorAbutments
+Висячая с заделкой канатов в балке жесткости
+HangingWithRopesStiffeningBeam
+Вантовая с балкой жесткости
+CableStayedWithStiffeningBeam
+Комбинированная система
+Combined
+Рамная
+Frame
+Рамно-консольная
+FrameConsole
+Рамно-подвесная
+FrameSuspended
+Рамная с наклонными опорами (“Бегущая лань”)
+FrameInclinedSupports
+Рамная с V-образными опорами
+FrameVShapedSupports
+Разводной мост раскрывающейся системы
+DropDownSwing
+Разводной мост поворотной системы
+SwingAxle
+Разводной мост вертикально-подъемной системы
+VerticalLiftSwing
+Ригельно-подкосная
+CrossbarAndStrut
+Подкосная
+Podkosnaya
+Нет данных
+NoData

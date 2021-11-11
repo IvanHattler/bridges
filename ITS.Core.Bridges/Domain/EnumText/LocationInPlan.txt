@@ -1,0 +1,12 @@
+﻿Расположение в плане
+LocationInPlan
+Прямое
+Direct
+Косое
+Oblique
+Криволинейное
+Сurvilinear
+Сложное
+Complicated
+Нет данных
+NoData
